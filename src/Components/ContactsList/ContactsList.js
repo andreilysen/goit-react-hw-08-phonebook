@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Loader from "react-loader-spinner";
 
 import ContactListItem from "./ContactListItem";
 import { getContactOperation } from "../../redux/contacts/contactsOperations";
@@ -21,7 +22,7 @@ const ContactsList = () => {
   }, [dispatch]);
 
   if (loading) {
-    return <h1>...Loading</h1>;
+    return <Loader type="Puff" color="#00BFFF" height={100} width={100} />;
   }
 
   if (error) {

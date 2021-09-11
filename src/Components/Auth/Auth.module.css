@@ -1,0 +1,9 @@
+.authLink {
+  display: flex;
+  justify-content: center;
+}
+
+.itemLink {
+  margin: 0 5px;
+  text-decoration: none;
+}
