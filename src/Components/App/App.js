@@ -14,7 +14,7 @@ import {
 import { currentUser } from "../../redux/user/userOperation";
 import Loader from "../Loader";
 
-// import styles from "./App.module.css";
+import styles from "./App.module.css";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -28,8 +28,10 @@ const App = () => {
 
   return (
     <Container>
-      <h2>Phonebook</h2>
-      <Heder />
+      <div className={styles.heder}>
+        <h2>Phonebook</h2>
+        <Heder />
+      </div>
       {loading ? (
         <Loader />
       ) : (

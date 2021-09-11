@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.button {
+/* .button {
   margin-top: 10px;
   font-family: cursive;
   font-size: larger;
@@ -17,10 +17,11 @@
   background-color: inherit;
   border: double;
   cursor: pointer;
-}
+} */
 
 .input {
   width: 350px;
   padding: 5px;
   background-color: inherit;
+  margin-bottom: 10px;
 }

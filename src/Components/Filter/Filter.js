@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from "../../redux/contacts/contactsAction";
-
+import { Input } from "@material-ui/core";
 import styles from "../Form/Form.module.css";
 
 const Filter = () => {
@@ -10,7 +10,7 @@ const Filter = () => {
   return (
     <>
       <p>Find contacts by name</p>
-      <input
+      <Input
         className={styles.input}
         type="text"
         name="filter"
